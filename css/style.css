@@ -68,8 +68,9 @@ header {
   left: 100px;
   display: flex;
   justify-content: space-evenly;
-  height: 50vh;
+  height: fit-content;
   width: 80vw;
+  padding-bottom: 30px;
 }
 
 #city {
@@ -137,8 +138,6 @@ header {
     flex-direction: column;
     gap: 50px;
     top: 150px;
-    height: fit-content;
-    padding-bottom: 30px;
   }
 
   .details {
@@ -148,5 +147,54 @@ header {
 
 /* For mobile devices */
 @media (max-width: 576px) {
-  /* Add your mobile styles here */
+  .header {
+    height: 70px;
+  }
+
+  .logo {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+
+  .searchBox {
+    margin-right: 20px;
+  }
+
+  .searchBox input {
+    width: 75px;
+    font-size: 12px;
+  }
+
+  .searchBox img {
+    width: 30px;
+  }
+
+  .content {
+    top: 120px;
+    left: 20px;
+  }
+
+  .details {
+    width: auto;
+    padding: 30px;
+  }
+
+  .-detail {
+    font-size: 16px;
+  }
+
+  #city {
+    font-size: 40px;
+  }
+
+  #cel,
+  #far {
+    font-size: 40px;
+  }
+
+  #main,
+  #description,
+  #timezone {
+    font-size: 16px;
+  }
 }
